@@ -8,18 +8,99 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <a class="btn btn-primary" href="atenciones_observadas.html">Atras</a>
+    <header class="bg-warning">
+        <a class="btn btn-primary float-end mt-4" href="atenciones_observadas.html">Atras</a>
+        <header>
+
+      
+            <div class="d-flex justify-content-between align-items-center" >
+               
+              <div> <img src="assets/img/Los_Santos_Customs_logo.png" style="width: 250 px; height: 100px;"></div>
+      
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+      
+                    <a class="nav-link active" aria-current="page" href="atenciones_observadas.html">Atenciones</a>
+      
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categorias</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Deportivos</a></li>
+                      <li><a class="dropdown-item" href="#">Super</a></li>
+                      <li><a class="dropdown-item" href="#">Sedan</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="trabajos_realizados.html">trabajos realizados</a></li>
+                      <a href="atenciones_observadas.html"></a>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="mecanicos.html">Mecanicos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true" href="contacto.html">Contatanos</a>
+                </li>
+                
+                <li>
+                  <nav class="navbar bg-body-tertiary align-items-center">
+                    <div class="container-fluid">
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                      </li>
+                      <li>
+                        <a  class="btn btn-primary mt-1 " href="registro.html">Registrarse</a>
+                      </li>
+                      <li>
+                        <a  class="btn btn-primary mt-1" href="iniciar_sesion.html">Ingresar</a>
+                      </li>
+                      </form>
+                    </div>
+                  </nav>
+                </li>
+              
+              </ul>
+            </div> 
+      
+      
+          </header>
     </header>
     <main>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Mecanicos</option>
+                <option value="1">David</option>
+                <option value="2">Julio</option>
+                <option value="3">Nicolas</option>
+              </select>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Vehiculo</label>
+                    <input type="text" class="form-control" id="validationCustom01"  required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Tipo</label>
+                        <input type="text" class="form-control" id="validationCustom01"  required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">Motivo</label>
+                            <input type="text" class="form-control" id="validationCustom01"  required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Explique en breves palabras el motivo de su solicitud</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="exampleFormControlTextarea1" class="form-label">proporcione una breve descripcion de su problema</label>
+            <textarea class="form-control" minlength="10" maxlength="1000" required id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
     </main>
 </body>
+<footer class="bg-warning">
+    &copy; Todos los derechos reservados
+  </footer>
 </html>
